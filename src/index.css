@@ -1,0 +1,1056 @@
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+/* ===== UNCHARTED THEME COLORS ===== */
+:root {
+  /* Primary Colors */
+  --uncharted-brown: #3b2f2f;
+  --uncharted-gold: #c9a24d;
+  --uncharted-parchment: #f4ecd8;
+  --uncharted-green: #1f3a2e;
+  --uncharted-navy: #2F3E55;
+  
+  /* Background Colors */
+  --bg-primary: #f4ecd8;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-light: #f9f5eb;
+  
+  /* Text Colors */
+  --text-primary: #3b2f2f;
+  --text-secondary: #5a4a42;
+  --text-muted: #8b7355;
+  
+  /* Accent Colors */
+  --accent-color: #c9a24d;
+  --border-color: #d4c5b0;
+  
+  /* Spacing */
+  --container-padding: 2rem;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif; /* Body text font */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--uncharted-brown);
+}
+
+/* ===== FONT RULES ===== */
+/* Headings - Cinzel (Treasure Map Style) */
+h1, h2, h3, h4, h5, h6,
+.store-title,
+.navbar-brand,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4,
+footer h5 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+/* UI Elements - Source Sans 3 (Clean & Readable) */
+button,
+.btn,
+.nav-link,
+.card-title,
+.card-text,
+.product-name,
+.price,
+input,
+select,
+textarea,
+.form-control,
+.form-select {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--uncharted-navy);
+  color: var(--uncharted-parchment);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: var(--uncharted-brown);
+  border-color: var(--uncharted-gold);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* ===== NAVBAR - NAVY BLUE WITH LIGHT TEXT ===== */
+.navbar {
+  min-height: auto !important;
+  height: auto !important;
+  padding: 0.5rem 0 !important;
+  background-color: #2F3E55 !important; /* Navy blue background */
+  border-bottom: 2px solid #c9a24d !important; /* Gold border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.navbar-brand img {
+  height: 40px !important;
+  width: auto !important;
+  max-height: 40px !important;
+  display: block !important;
+}
+
+.navbar-nav {
+  align-items: center !important;
+}
+
+.navbar-nav .nav-link {
+  color: #d4c5b0 !important; /* Light parchment text */
+  padding: 0.5rem 0.8rem !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f4ecd8 !important; /* Brighter parchment on hover */
+  transform: translateY(-2px) !important;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 0.6rem !important;
+}
+
+/* Cart icon */
+.navbar-nav .nav-link .fa-shopping-cart {
+  font-size: 1.2rem !important;
+}
+
+/* Cart badge */
+.navbar-nav .nav-link .badge {
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.5rem !important;
+  font-weight: 600 !important;
+}
+
+.navbar > .container,
+.navbar > .container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #2F3E55 !important;
+  padding: 0.5rem 0 !important;
+}
+
+header h1 {
+  color: #f4ecd8 !important;
+}
+
+header p {
+  color: #d4c5b0 !important;
+}
+
+.store-title {
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  color: var(--uncharted-brown);
+  margin-bottom: 0.2rem !important;
+}
+
+.store-subtitle {
+  font-size: 0.9rem !important;
+  color: var(--text-secondary);
+  margin-top: 0 !important;
+}
+
+/* ===== CAROUSEL / BANNER ===== */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background: transparent !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent !important;
+  filter: invert(0);
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-caption {
+  padding: 1rem 2rem;
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+}
+
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4 {
+  font-size: 2.2rem !important;
+  font-weight: bold !important;
+  color: #f4ecd8 !important;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+  margin-bottom: 0 !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 0.5rem 1rem;
+    bottom: 15px; 
+    left: 5%;
+    right: 5%;
+  }
+  
+  .carousel-caption h2,
+  .carousel-caption h3,
+  .carousel-caption h4 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* ===== PRODUCT CARD STYLES ===== */
+.product-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  background-color: var(--bg-light);
+}
+
+.product-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-img-wrapper:hover .product-img {
+  transform: scale(1.1);
+}
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--uncharted-brown);
+  color: var(--uncharted-gold);
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header,
+.card-footer {
+  background-color: var(--bg-light);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.card-title,
+.card-text {
+  color: var(--text-primary);
+}
+
+/* ===== SEARCH/FILTER/SORT INPUTS ===== */
+.form-control,
+.form-select,
+.search-bar input {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.form-control:focus,
+.form-select:focus,
+.search-bar input:focus {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--uncharted-gold);
+  box-shadow: 0 0 0 0.2rem rgba(201, 162, 77, 0.25);
+}
+
+.input-group-text {
+  background-color: var(--uncharted-navy);
+  color: var(--uncharted-parchment);
+  border-color: var(--uncharted-navy);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background-color: var(--uncharted-navy);
+  border-color: var(--uncharted-navy);
+  color: var(--uncharted-parchment);
+}
+
+.btn-primary:hover {
+  background-color: var(--uncharted-brown);
+  border-color: var(--uncharted-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 47, 47, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--uncharted-navy);
+  border-color: var(--uncharted-navy);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--uncharted-navy);
+  color: var(--uncharted-parchment);
+}
+
+/* ===== BOTTOM NAVIGATION (Mobile) ===== */
+.bottom-nav {
+  background-color: var(--bg-secondary) !important;
+  border-top: 2px solid var(--uncharted-gold) !important;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav-item {
+  color: #000000 !important;
+}
+
+.bottom-nav-item:hover,
+.bottom-nav-item.active {
+  color: var(--uncharted-navy) !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--uncharted-brown);
+  color: var(--uncharted-parchment);
+  border-top: 3px solid var(--uncharted-gold);
+}
+
+footer a {
+  color: var(--uncharted-gold);
+}
+
+footer a:hover {
+  color: var(--uncharted-parchment);
+}
+
+/* ===== CART PAGE ===== */
+.cart-item-row {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+}
+
+/* ===== RESPONSIVE HEADER (Module 5) ===== */
+@media (max-width: 991.98px) {
+  .store-title {
+    font-size: 1.5rem;
+  }
+  .store-subtitle {
+    font-size: 0.9rem;
+  }
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* ===== SMOOTH FADE-UP ANIMATION (Module 5) ===== */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== CART MOBILE RESPONSIVE ===== */
+@media (max-width: 576px) {
+  .cart-item-row {
+    flex-wrap: wrap;
+  }
+  .cart-item-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .cart-item-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .cart-item-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cart-item-actions .btn {
+    flex: 1;
+    max-width: 150px;
+  }
+  .cart-item-remove {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--uncharted-brown);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--uncharted-gold);
+}
+
+/* ===== TREASURE CARD STYLES - UNIQUE TO UNCHARTED ===== */
+.treasure-card {
+  border: 2px solid #d4c5b0 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(145deg, #ffffff, #f9f5eb) !important;
+  transition: all 0.4s ease !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.treasure-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 30px rgba(59, 47, 47, 0.3) !important;
+  border-color: #c9a24d !important;
+}
+
+/* Treasure Seal (replaces sale badge) */
+.treasure-seal {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #c9a24d, #8b6914);
+  color: #2F3E55;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.treasure-seal i {
+  margin-right: 5px;
+}
+
+/* Treasure Title */
+.treasure-title {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #3b2f2f !important;
+  min-height: 45px;
+  line-height: 1.4;
+}
+
+/* Treasure Rating */
+.treasure-rating {
+  font-size: 0.85rem;
+}
+
+/* Treasure Price */
+.treasure-price {
+  font-size: 1rem;
+}
+
+/* Explore Button */
+.btn-explore {
+  background: linear-gradient(135deg, #2F3E55, #3b2f2f) !important;
+  border: none !important;
+  color: #f4ecd8 !important;
+  padding: 0.7rem 1rem !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(135deg, #c9a24d, #8b6914) !important;
+  color: #2F3E55 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 15px rgba(201, 162, 77, 0.4) !important;
+}
+
+/* Card Image Wrapper */
+.product-img-wrapper {
+  border-bottom: 1px solid #d4c5b0;
+  background: #ffffff;
+  padding: 15px;
+}
+
+.product-img-wrapper img {
+  border-radius: 8px;
+}
+
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+  background-color: #1a1a2e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar {
+  background-color: #16213e !important;
+  border-bottom-color: #c9a24d !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+  color: #d4c5b0 !important;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+  color: #f4ecd8 !important;
+}
+
+body.dark-mode header {
+  background-color: #16213e !important;
+}
+
+body.dark-mode .card {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .card-title {
+  color: #f4ecd8 !important;
+}
+
+body.dark-mode .card-text {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+  background-color: #1f2937 !important;
+  color: #e0e0e0 !important;
+  border-color: #c9a24d !important;
+}
+
+body.dark-mode .input-group-text {
+  background-color: #16213e !important;
+  color: #f4ecd8 !important;
+  border-color: #374151 !important;
+}
+
+body.dark-mode footer {
+  background-color: #16213e !important;
+  border-top-color: #c9a24d !important;
+}
+
+body.dark-mode .treasure-card {
+  background: linear-gradient(145deg, #1f2937, #1a1a2e) !important;
+  border-color: #374151 !important;
+}
+
+body.dark-mode .treasure-title {
+  color: #f4ecd8 !important;
+}
+
+body.dark-mode .text-muted {
+  color: #a0a0a0 !important;
+}
+
+body.dark-mode hr {
+  border-color: #374151 !important;
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+  background: transparent !important;
+  border: 2px solid #c9a24d !important;
+  color: #f4ecd8 !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  font-size: 0.9rem !important;
+  margin-left: 1rem !important;
+}
+
+.theme-toggle:hover {
+  background: #c9a24d !important;
+  color: #16213e !important;
+}
+
+/* Mobile bottom nav dark mode */
+body.dark-mode .bottom-nav {
+  background-color: #16213e !important;
+  border-top-color: #c9a24d !important;
+}
+
+body.dark-mode .bottom-nav-item {
+  color: #d4c5b0 !important;
+}
+
+/* ===== HOME PAGE - DARK MODE FIXES ===== */
+
+/* "Available Treasures" heading */
+body.dark-mode .container h2[style*="#3b2f2f"],
+body.dark-mode .container h2.mb-0 {
+    color: #f4ecd8 !important;
+}
+
+/* "View All Treasures" button */
+body.dark-mode .btn-outline-primary {
+    color: #c9a24d !important;
+    border-color: #c9a24d !important;
+    background-color: transparent !important;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: #c9a24d !important;
+    color: #2F3E55 !important;
+}
+
+/* Carousel heading text */
+body.dark-mode .carousel-caption h2 {
+    color: #f4ecd8 !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.95) !important;
+}
+
+/* Footer links hover */
+body.dark-mode footer a:hover {
+    color: #f4ecd8 !important;
+}
+
+/* Toast notification animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Wishlist & Compare buttons in dark mode */
+body.dark-mode .wishlist-btn,
+body.dark-mode .compare-btn {
+    background: rgba(31, 41, 55, 0.9) !important;
+}
+
+body.dark-mode .wishlist-btn:hover,
+body.dark-mode .compare-btn:hover {
+    background: rgba(201, 162, 77, 1) !important;
+}
+
+/* Skeleton loading in dark mode */
+body.dark-mode .skeleton-image,
+body.dark-mode .skeleton-text,
+body.dark-mode .skeleton-button {
+    background: linear-gradient(90deg, #2d3748 25%, #4a5568 50%, #2d3748 75%) !important;
+    background-size: 200% 100% !important;
+}
+
+/* Compare page table in dark mode */
+body.dark-mode .table {
+    color: #e0e0e0 !important;
+    background-color: #1f2937 !important;
+}
+
+body.dark-mode .table-bordered {
+    border-color: #374151 !important;
+}
+
+body.dark-mode .table-light {
+    background-color: #2d3748 !important;
+    color: #f4ecd8 !important;
+}
+
+/* Recently Viewed section in dark mode */
+body.dark-mode .fade-in h2 {
+    color: #f4ecd8 !important;
+}
+
+/* ===== HEADER ===== */
+
+header,
+header.custom-header {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Light mode header */
+header {
+  background-color: #2F3E55 !important;
+}
+
+/* Dark mode header */
+body.dark-mode header,
+body.dark-mode header.custom-header {
+  background-color: #16213e !important;
+}
+
+/* Header text in light mode */
+header h1 {
+  color: #f4ecd8 !important;
+}
+
+header p {
+  color: #d4c5b0 !important;
+}
+
+/* Header text in dark mode */
+body.dark-mode header h1 {
+  color: #f4ecd8 !important;
+}
+
+body.dark-mode header p {
+  color: #d4c5b0 !important;
+}
+
+/* ===== WISHLIST BUTTON STYLES ===== */
+.wishlist-btn {
+  transition: all 0.3s ease !important;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.1) !important;
+  background: rgba(244, 236, 216, 1) !important;
+}
+
+body.dark-mode .wishlist-btn {
+  background: rgba(31, 41, 55, 0.9) !important;
+}
+
+body.dark-mode .wishlist-btn:hover {
+  background: rgba(201, 162, 77, 1) !important;
+}
+
+/* ===== SKELETON LOADING ANIMATION ===== */
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-image,
+.skeleton-text,
+.skeleton-button {
+  animation: skeleton-loading 1.5s infinite;
+}
+
+body.dark-mode .skeleton-image,
+body.dark-mode .skeleton-text,
+body.dark-mode .skeleton-button {
+  background: linear-gradient(90deg, #2d3748 25%, #4a5568 50%, #2d3748 75%) !important;
+  background-size: 200% 100% !important;
+}
+
+/* ===== WISHLIST & COMPARE BUTTONS ===== */
+.wishlist-btn:hover,
+.compare-btn:hover {
+  transform: scale(1.1) !important;
+  background: rgba(244, 236, 216, 1) !important;
+}
+
+body.dark-mode .wishlist-btn,
+body.dark-mode .compare-btn {
+  background: rgba(31, 41, 55, 0.9) !important;
+}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+  background: transparent !important;
+  border: 2px solid #c9a24d !important;
+  color: #f4ecd8 !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+}
+
+.theme-toggle:hover {
+  background: #c9a24d !important;
+  color: #16213e !important;
+}
+
+/* ===== RECEIPT & PRINT STYLES ===== */
+
+.receipt-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.receipt {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header h2 {
+    font-family: 'Cinzel', serif;
+    color: #3b2f2f;
+}
+
+.receipt-info,
+.receipt-items,
+.receipt-totals {
+    margin-bottom: 30px;
+}
+
+.receipt table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.receipt th,
+.receipt td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.receipt th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.receipt-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #c9a24d;
+}
+
+/* Hide elements when printing */
+@media print {
+    /* Hide navbar, footer, buttons */
+    .navbar,
+    footer,
+    .no-print,
+    .btn,
+    header {
+        display: none !important;
+    }
+
+    /* Show only receipt */
+    .receipt-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .receipt {
+        box-shadow: none !important;
+        padding: 20px !important;
+    }
+
+    /* Ensure background colors print */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        background: white !important;
+    }
+}
+
+/* Dark mode receipt */
+body.dark-mode .receipt {
+    background: #1f2937 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .receipt-header h2 {
+    color: #f4ecd8 !important;
+}
+
+body.dark-mode .receipt th {
+    background-color: #2d3748 !important;
+    color: #f4ecd8 !important;
+}
+
+body.dark-mode .receipt table td {
+    border-bottom-color: #374151 !important;
+}
+
+/* ===== MOBILE BOTTOM NAV - ICON FIXES ===== */
+
+/* Light Mode - Make icons visible on dark blue background */
+.navbar.fixed-bottom .text-dark {
+  color: #2F3E55 !important;  /* Dark navy for light mode */
+}
+
+.navbar.fixed-bottom .fa-home,
+.navbar.fixed-bottom .fa-compass,
+.navbar.fixed-bottom .fa-heart,
+.navbar.fixed-bottom .fa-shopping-cart {
+  color: #2F3E55 !important;  /* Dark navy icons */
+}
+
+/* Dark Mode - Make ALL icons light */
+body.dark-mode .navbar.fixed-bottom {
+  background-color: #16213e !important;
+  border-top-color: #c9a24d !important;
+}
+
+body.dark-mode .navbar.fixed-bottom .fa-home,
+body.dark-mode .navbar.fixed-bottom .fa-compass,
+body.dark-mode .navbar.fixed-bottom .fa-heart,
+body.dark-mode .navbar.fixed-bottom .fa-shopping-cart,
+body.dark-mode .navbar.fixed-bottom .fa-moon,
+body.dark-mode .navbar.fixed-bottom .fa-sun {
+  color: #f4ecd8 !important;  /* Light parchment color */
+}
+
+body.dark-mode .navbar.fixed-bottom div[style*="font-size: 12px"] {
+  color: #d4c5b0 !important;  /* Light text for labels */
+}
+
+/* Active/Hover state for better feedback */
+.navbar.fixed-bottom .text-dark:hover,
+body.dark-mode .navbar.fixed-bottom .fa-home:hover,
+body.dark-mode .navbar.fixed-bottom .fa-compass:hover,
+body.dark-mode .navbar.fixed-bottom .fa-heart:hover,
+body.dark-mode .navbar.fixed-bottom .fa-shopping-cart:hover {
+  color: #c9a24d !important;  /* Gold on hover */
+}
+
+/* ===== MOBILE BOTTOM NAV - FORCE VISIBILITY ===== */
+
+/* Light mode - white background, dark icons */
+.navbar.fixed-bottom {
+  background-color: #ffffff !important;
+  border-top: 3px solid #c9a24d !important;
+}
+
+.navbar.fixed-bottom .fa-home,
+.navbar.fixed-bottom .fa-compass,
+.navbar.fixed-bottom .fa-heart,
+.navbar.fixed-bottom .fa-shopping-cart,
+.navbar.fixed-bottom .fa-moon {
+  color: #2F3E55 !important;  /* Dark navy */
+}
+
+/* Dark mode - dark background, light icons */
+body.dark-mode .navbar.fixed-bottom {
+  background-color: #16213e !important;
+}
+
+body.dark-mode .navbar.fixed-bottom .fa-home,
+body.dark-mode .navbar.fixed-bottom .fa-compass,
+body.dark-mode .navbar.fixed-bottom .fa-heart,
+body.dark-mode .navbar.fixed-bottom .fa-shopping-cart,
+body.dark-mode .navbar.fixed-bottom .fa-sun {
+  color: #f4ecd8 !important;  /* Light parchment */
+}
+
+/* Text labels */
+.navbar.fixed-bottom span[style*="font-size: 11px"] {
+  color: #2F3E55 !important;
+}
+
+body.dark-mode .navbar.fixed-bottom span[style*="font-size: 11px"] {
+  color: #d4c5b0 !important;
+}
