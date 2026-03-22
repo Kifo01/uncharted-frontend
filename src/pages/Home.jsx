@@ -15,7 +15,7 @@ const Home = () => {
   const { addRecentlyViewed } = useRecentlyViewed();  // ← ADD THIS HOOK
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://uncharted-backend-ybcf.onrender.com/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data.slice(0, 4));
